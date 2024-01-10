@@ -10,8 +10,8 @@ console.log(user_height, user_weight, goals, result_btn);
 // 3. 키와 몸무게를 적고 결과보기 버튼 클릭했을 때 키와 몸무게의 데이터 값에 식이 자동 계산되어 팝업창에 메세지가 출력된다.
 
 result_btn.addEventListener('click',function(){
-    target = Number(user_height.value - 100)*0.9;
-    goals.value = `적정 체중은 ${target}kg 이며 ${user_weight.value - target}kg 초과 되셨습니다.`;
+    const target = Number(user_height.value - 100)*0.9;
+    alert(`적정 체중은 ${target}kg 이며 ${user_weight.value - target}kg 초과 되셨습니다.`);
     console.log(target)
     console.log(goals.value)
 })
